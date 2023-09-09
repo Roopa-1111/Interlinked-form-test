@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Forms</title>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <form>
+                <div class="step step-1 active">
+                    <h2 align="center">Create a Project</h2>
+                    <div class="form-group">
+                        <label for="projectName">Project Name</label>
+                        <input type="text" id="projectName" name="project-name">
+                    </div>
+                    <div style="margin-bottom: -20px;" class="form-group">
+                        <label for="client">Client</label>
+                    </div>
+                    <div class="form-group input-inlinediv">
+                        <input class="input1 " type="text" id="client" name="client">
+                        <input class="input2 " type="text" id="nclient" name="nclient" placeholder="+ New Client">
+                    </div>
+                    <div style="margin-bottom: -20px;" class="form-group">
+                        <label for="date">Dates</label>
+                    </div>
+                    <div class="form-group input-inlinediv">
+                        <input type="date" id="date" name="date">
+                        <input type="date" id="date" name="date">
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Notes</label>
+                        <textarea name="" id="" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="form-group center">
+                        <button type="button" class="next-btn">Next</button>
+                    </div>
+                </div>
+
+                <div class="step step-2">
+                    <h2 align="center">Project type</h2>
+                    <p align="center">Don't panic You can also customize this types in settings</p>
+                    <div class="form-group button-inlinediv">
+                        <div>
+                            <button class="startbtn">Time & Materials </button>
+                        </div>
+                        <div>
+                            <button class="midbtn">Fixed Fee </button>
+                        </div>
+                        <div>
+                            <button class="endbtn">Non Billable </button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="hour">Hourly</label>
+                        <p>We need hourly rates to track your project's billable amount.</p>
+                    </div>
+                    <div class="form-group input-inlinediv">
+                        <div>
+                            <input list="select" name="select" placeholder="Project hourly rate">
+                            <datalist class="form-control" id="select">
+                                <option value="Rs 12678" selected />
+                                <option value="" />
+                                <option value="" />
+                        </div>
+                        <div>
+                            <input type="text" id="email" name="email" placeholder="Rs 12678">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Budget</label>
+                        <p>We need hourly rates to track your project's billable amount.</p>
+                    </div>
+                    <div class="form-group input-inlinediv">
+                        <div>
+                            <input list="select" name="select" placeholder="Hours per person">
+                            <datalist class="form-control" id="select">
+                                <option value="" selected />
+                                <option value="" />
+                                <option value="" />
+                        </div>
+                        <div>
+                            <input type="text" id="" name="" hidden>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div>
+                        <input type="checkbox" id="rebugdet" name="rebugdet" value="resetBugdet">
+                        <label style="font-weight: 400; font-size: 13px;" for="rebugdet">&nbsp; Budget reset every
+                            month</label><br>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="rebugdet" name="rebugdet" value="resetBugdet" checked>
+                        <label style="font-weight: 400; font-size: 13px;" for="rebugdet">&nbsp; Send email alerts if
+                            project exceeds &nbsp; <input class="small" value="80.00">&nbsp; % of bugdet </label><br>
+                    </div>
+                    <div class="form-group center">
+                        <button style="margin-bottom: -65px;" type="button" class="next-btn">Next</button>
+                    </div>
+                    <button type="button" class="previous-btn"><img style="width: 15px;"
+                            src="./211686_back_arrow_icon.svg" alt=""> Back</button>
+                </div>
+
+                <div class="step step-3">
+                    <h2 align="center">Select a View</h2>
+                    <p align="center">You can also customize this views in settings.</p>
+                    <div class="form-group card-inline">
+                        <div class="card" style="max-width: 450px;">
+                            <img src="./Screenshot from 2023-09-08 17-27-05.png" alt="Avatar" style="width:100%">
+                        </div>
+                        <div class="card" style="max-width: 600px;">
+                            <img src="./Screenshot from 2023-09-08 17-23-16.png" alt="Avatar" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="form-group card-inline">
+                        <label for="list" class="list">List</label>
+                        <label for="board" class="board">Board</label>
+                    </div>
+
+                    <button style="margin-top: 220px;" type="button" class="previous-btn"><img style="width: 15px;"
+                            src="./211686_back_arrow_icon.svg" alt=""> Back</button>
+                    <button style="margin-top: 220px;" type="submit" class="submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
